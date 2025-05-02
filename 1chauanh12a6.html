@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Hobbies My Life</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #FDF6EC; color: #333; margin: 0; padding: 0; }
+    header { background-color: #6FA3EF; padding: 20px; text-align: center; color: white; }
+    nav ul { list-style-type: none; padding: 0; margin: 0; text-align: center; }
+    nav ul li { display: inline; margin: 0 15px; }
+    nav ul li a { color: white; text-decoration: none; font-weight: bold; cursor: pointer; }
+    main { padding: 20px; text-align: center; }
+    .gallery { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px; }
+    .gallery img { border: 2px solid #6FA3EF; border-radius: 10px; width: 300px; height: 200px; }
+    footer { background-color: #6FA3EF; color: white; text-align: center; padding: 10px; margin-top: 20px; }
+
+    .section { display: none; }
+    .active { display: block; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Hobbies My Life</h1>
+    <nav>
+      <ul>
+        <li><a onclick="showSection('home')">Trang chủ</a></li>
+        <li><a onclick="showSection('music')">Âm nhạc</a></li>
+        <li><a onclick="showSection('story')">Truyện</a></li>
+        <li><a onclick="showSection('movies')">Phim</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div id="home" class="section active">
+      <h2>Chào mừng đến với My Hobbies My Life!</h2>
+      <p>Đây là nơi lưu giữ sở thích cá nhân về âm nhạc, truyện và phim ảnh.</p>
+      <div class="gallery">
+        <img src="https://i.pinimg.com/474x/5c/80/8d/5c808db1c094f1340744dc885e75d18e.jpg" alt="Ảnh âm nhạc">
+        <img src="https://i.pinimg.com/474x/e5/5a/e4/e55ae448b4e7f0c5eb1aaed1636dac39.jpg" alt="Ảnh truyện">
+        <img src="https://i.pinimg.com/474x/39/09/f6/3909f6e8add7ea7fbf993145b83d8000.jpg" alt="Ảnh phim">
+
+      </div>
+    </div>
+
+    <div id="music" class="section">
+      <h2>Danh sách bài hát yêu thích</h2>
+      <h3>Sao Em Lại Trông Như Thế Này - Negav</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/pBEu4MCQ12A?si=hEPt3rsa_tMdGMO6" allowfullscreen></iframe>
+
+      <h3>Exit Sign - HIEUTHUHAI</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/sJt_i0hOugA" allowfullscreen></iframe>
+
+      <h3>Thật Quá Đáng Để Yêu - Amee</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/O9ZXd6YCZiQ?si=1iBc_qhOCZfJtbiZ" allowfullscreen></iframe>
+    </div>
+
+   <div id="story" class="section">
+  <h2>Danh sách truyện yêu thích</h2>
+  <ul>
+    <li><a href="https://www.nettruyenus.com/truyen-tranh/conan" target="_blank">📖 Thám tử lừng danh Conan - Tập 24</a></li>
+    <li><a href="https://www.nettruyenus.com/truyen-tranh/doraemon" target="_blank">📖 Doraemon - Tập bất kỳ</a></li>
+    <li><a href="https://www.nettruyenus.com/truyen-tranh/shin-cau-be-but-chi" target="_blank">📖 Shin - Cậu Bé Bút Chì</a></li>
+    <li><a href="https://www.nettruyenus.com/truyen-tranh/attack-on-titan" target="_blank">📖 Attack on Titan</a></li>
+    <li><a href="https://www.nettruyenus.com/truyen-tranh/one-piece" target="_blank">📖 One Piece</a></li>
+    <li><a href="https://www.nettruyenus.com/truyen-tranh/kimetsu-no-yaiba" target="_blank">📖 Kimetsu no Yaiba</a></li>
+    <li><a href="https://www.nettruyenus.com/truyen-tranh/jujutsu-kaisen" target="_blank">📖 Jujutsu Kaisen</a></li>
+  </ul>
+</div>
+
+
+    <div id="movies" class="section">
+  <h2>Danh sách phim yêu thích</h2>
+  <ul>
+    <li><a href="https://www.netflix.com/title/81040344" target="_blank">🎬 Ký Sinh Trùng</a></li>
+    <li><a href="https://www.netflix.com/title/81404894" target="_blank">🎬 Nữ Hoàng Nước Mắt</a></li>
+    <li><a href="https://www.netflix.com/title/81292944" target="_blank">🎬 Alice in Borderland</a></li>
+    <li><a href="https://www.netflix.com/title/80192098" target="_blank">🎬 Money Heist (La Casa De Papel)</a></li>
+    <li><a href="https://www.netflix.com/title/81273150" target="_blank">🎬 Squid Game</a></li>
+    <li><a href="https://www.netflix.com/title/80057281" target="_blank">🎬 Stranger Things</a></li>
+    <li><a href="https://www.netflix.com/title/80990668" target="_blank">🎬 The Witcher</a></li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <p>Liên hệ: chauanhhh07@gmail.com | SĐT: 0xxxxx803</p>
+  </footer>
+
+  <script>
+    function showSection(sectionId) {
+      // Hide all sections
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => section.classList.remove('active'));
+
+      // Show the selected section
+      const activeSection = document.getElementById(sectionId);
+      activeSection.classList.add('active');
+    }
+  </script>
+</body>
+</html>
